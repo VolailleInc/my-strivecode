@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Contain = styled.div`
   display: flex;
-  position: relative;
+  // position: relative;
   align-items: center;
   justify-content: space-around;
   //z-index: 1010;

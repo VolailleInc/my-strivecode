@@ -4,6 +4,7 @@ import { FaCartPlus } from "react-icons/fa";
 import { FaLanguage } from "react-icons/fa";
 import Button from "../../SharedRecources/components/Button.js";
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 import NavMenus from "./NavMenus";
 
 const Nav = styled.nav`
@@ -35,23 +36,37 @@ const NavSection = styled.div`
   margin: 0 1rem 0 1rem;
   width: 20rem;
 `;
-const Logo = styled.h1`
-  font-sive: 3rem;
+// const Logo = styled.h1`
+//   font-weight: bolder;
+//   font-family: Hack;
+// `;
+
+// Create the keyframes
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+// Here we create a component that will rotate everything we pass in over two seconds
+const Logo = styled.div`
+  position: relative;
+  animation: ${rotate} 2s linear infinite;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
   color: #ff6347;
-  font-weight: bolder;
-  font-family: Hack;
 `;
 
 export default function TopNavBar(props) {
   return (
     <Nav className="sc-navigation">
       <Link href="/home">
-        <Logo>striveCode</Logo>
-        {/* <img
-          src={logo}
-          alt="strive code logo"
-         
-        /> */}
+        <Logo>&lt; Code /&gt;</Logo>
       </Link>
 
       <SearchBar />

@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const Card = styled.section`
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
   height: fit-content;
   width: fit-content;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #efefef;
   opacity: 1;
   border: 0.5px solid #b5b3b3;

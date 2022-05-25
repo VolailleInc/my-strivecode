@@ -52,7 +52,7 @@ export default function MenuList({ items, depthLevel }) {
               <span
                 style={{
                   color: "#858687",
-                  fontWeight: "Bold",
+                  // fontWeight: "normal",
                   marginLeft: "0.3rem",
                 }}
               >
