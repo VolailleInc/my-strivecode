@@ -10,17 +10,17 @@ import NavMenus from "./NavMenus";
 const Nav = styled.nav`
   display: flex;
   position: fixed;
-  background-color: #efefef;
+  background: #fff;
   align-items: center;
   justify-content: space-between;
   z-index: 1010;
   width: 100vw;
   opacity: 1;
-  height: 4.3rem;
-  margin: 0;
-  padding: 0;
+  height: 4.8rem;
+  margin: 0px;
+  padding: 0px;
   border-bottom: 0.5px solid #b5b3b3;
-  box-shadow: 0 2px 6px rgba(54 65 255/15%), 0 4px 10px rgba(54 65 255/ 15%);
+  box-shadow: rgb(20 20 20 /27%) 0.05rem 0.05rem 1.12rem;
 `;
 
 const Link = styled.a`
@@ -32,8 +32,10 @@ const NavSection = styled.div`
   display: flex;
   position: relative;
   align-items: center;
+  justify-items: center;
   justify-content: space-between;
-  margin: 0 1rem 0 1rem;
+  margin: 0;
+  padding: 0;
   width: 20rem;
 `;
 // const Logo = styled.h1`
@@ -55,8 +57,9 @@ const rotate = keyframes`
 // Here we create a component that will rotate everything we pass in over two seconds
 const Logo = styled.div`
   position: relative;
-  animation: ${rotate} 2s linear infinite;
+  animation: ${rotate} 4s linear infinite;
   padding: 1rem 1rem;
+  font-family: Fira Code Bold;
   font-weight: bold;
   font-size: 1rem;
   color: #ff6347;

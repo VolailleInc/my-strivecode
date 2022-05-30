@@ -10,7 +10,7 @@ const Form = styled.form`
   width: 25rem;
   border: 0.5px solid #b5b3b3;
   border-radius: 0px;
-  background-color: #efefef;
+  background-color: #fff;
 `;
 
 const Input = styled.input`
@@ -19,20 +19,17 @@ const Input = styled.input`
   border-radius: 0;
   width: 25rem;
   height: 2.5rem;
-  font-weight: 510;
-  line-height: 1.4;
+  margin-right: 0.12rem;
   font-size: 1.3rem;
   color: #858687;
 `;
 const Button = styled.button`
   position: relative;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 2.5rem;
-  border: 0px;
+  width: 4rem;
+  height: 2.6rem;
+  border: 1px;
   background-color: #b5b3b3;
-  border-radius-right: 50px;
+  border-right: 3rem;
 `;
 function SearchBar() {
   return (

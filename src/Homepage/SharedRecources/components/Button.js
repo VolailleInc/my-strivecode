@@ -4,19 +4,17 @@ const ButtonStyled = styled.button`
   /* Adapt the colors based on primary prop */
   background: ${(props) => (props.primary ? "tomato" : "white")};
   color: ${(props) => (props.primary ? "white" : "#1c1d1f")};
-  display: inline-block;
   cursor: pointer;
-  align-text: center;
-  font-size: 1.1em;
-  margin: 0rem;
+  font-size: 1em;
+  margin: 0.2em;
   padding: 0.4em;
-  height: 2rem;
-  border-radius: 0px;
-  border: 0.5px solid #b5b3b3;
+  height: 2.25rem;
+  border-radius: 3px;
+  //border: 0px 
 `;
 
 function Button({ text, primary }) {
-  return <ButtonStyled primary={primary}>{text}</ButtonStyled>;
+  return <ButtonStyled primary>{text}</ButtonStyled>;
 }
 
 export default Button;

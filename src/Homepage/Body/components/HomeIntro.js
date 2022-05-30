@@ -3,20 +3,20 @@ import { Card } from "./Card";
 
 const Button = styled.a`
   /* This renders the buttons above... Edit me! */
-  display: absolute;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1em;
-  font-weight: 510;
-  border-radius: 0px;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 3px;
   text-decoration: none;
-  margin: 0 1.6rem;
-  padding: 0.3em 1em;
-  height: 2rem;
+  margin: 0.4rem;
+  padding: 0.4rem;
+  height: 2.5rem;
+  width: 10rem;
   cursor: pointer;
   background: transparent;
   color: tomato;
-  border: 0.5px solid tomato;
+  border: 1px solid tomato;
   z-index: 1010;
 
   /* The Register button is a primary button
@@ -29,10 +29,10 @@ const Button = styled.a`
 		`}
 `;
 
-const Height1 = styled.h1`
+const CardTitle = styled.h1`
   font-size: 1.7em;
   color: #555556;
-  margin: 1rem 0;
+  margin: 0;
   text-transform: initial;
   width: 25rem;
 `;
@@ -40,9 +40,9 @@ const Paragraph = styled.p`
   font-size: 1.2em;
   line-height: 1.5rem;
   width: 25rem;
-  color: #6b6b6c;
-  margin: 1rem 0;
-  margin-bottom: 2rem;
+  color: #212529;
+  margin: 1rem 1rem;
+  //margin-bottom: 1rem;
 `;
 const Intro = styled.div`
   display: flex;
@@ -59,18 +59,18 @@ const ButtonCard = styled.div`
   align-items: center;
   justify-items: center;
   justify-content: space-between;
-  width: 25rem;
-  padding: 0;
-  margin: 0;
+  width: 26rem;
+  padding: 0.4rem;
+  margin: 0.4rem;
 `;
 
-function HomeIntro({ primary }) {
+export default function HomeIntro({ primary }) {
   return (
     <Intro>
       <Card>
-        <Height1>
-          Code the future and define <br /> destinies!
-        </Height1>
+        <CardTitle>
+          <span >Code the future</span> and define <br /> destinies!
+        </CardTitle>
         <Paragraph>
           StriveCode is a Pan-African online platform to train the next
           generation of African programmers to code the future of Africa.
@@ -84,11 +84,9 @@ function HomeIntro({ primary }) {
           >
             Register for free
           </Button>
-          <Button href="/docs">Start coding...</Button>
+          <Button href="/docs">Start coding</Button>
         </ButtonCard>
       </Card>
     </Intro>
   );
 }
-
-export default HomeIntro;

@@ -9,9 +9,9 @@ export const Card = styled.section`
   height: fit-content;
   width: fit-content;
   padding: 1.5rem;
-  background-color: #efefef;
+  background-color: #fff;
   opacity: 1;
-  border: 0.5px solid #b5b3b3;
-  border-radius: 0px;
-  box-shadow: 0 2px 6px rgba(54 65 255/15%), 0 4px 10px rgba(54 65 255/ 15%);
+  border: 0.1px solid #b5b3b3;
+  border-radius: 3px;
+  box-shadow: rgb(20 20 20 /27%) 0.05rem 0.05rem 1.12rem;
 `;
